@@ -25,6 +25,15 @@ Polar Polar::operator*(Polar p2)
     return pt;
 }
 
+Polar Polar::operator/(Polar p2)
+{
+    Polar pt;
+    pt.r = r / p2.getR();
+    pt.theta = theta - p2.getTheta();
+
+    return pt;
+}
+
 std::ostream& operator<<(std::ostream& output, Polar p)
 {
     output << "(" << p.getR() << ", " << p.getTheta() << ")\n";

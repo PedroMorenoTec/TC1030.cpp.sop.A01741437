@@ -29,6 +29,15 @@ Rect Rect::operator+(Polar p)
     return tmp;
 }
 
+Rect Rect::operator-(Rect val)
+{
+        Rect tmp;
+        tmp.x = this->x - val.x;
+        tmp.y = this->y - val.y;
+
+        return tmp;
+}
+
 int Rect::getX()
 {
     return x;

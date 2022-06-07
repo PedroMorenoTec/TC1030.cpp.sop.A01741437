@@ -13,6 +13,8 @@ public:
     Rect operator+(Rect);
     Rect operator+(Polar);
 
+    Rect operator-(Rect);
+
     int getX();
     int getY();
 
